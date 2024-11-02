@@ -1,6 +1,6 @@
-import { createCamera } from './camera.js';
-import { createLight } from './light.js';
-import { createBox } from './box.js';
+import { createCamera } from 'camera.js';
+import { createLight } from 'light.js';
+import { createBox } from 'box.js';
 
 export function createScene(engine, canvas) {
     const scene = new BABYLON.Scene(engine);
