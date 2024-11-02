@@ -14,13 +14,13 @@ window.addEventListener('DOMContentLoaded', () => {
         const light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
         light.intensity = 0.7;
 
-        // Create a red material
-        const redMaterial = new BABYLON.StandardMaterial("redMaterial", scene);
-        redMaterial.emissiveColor = new BABYLON.Color3(1, 0, 0);
+        // Create a yellow material
+        const yellowMaterial = new BABYLON.StandardMaterial("yellowMaterial", scene);
+        yellowMaterial.emissiveColor = new BABYLON.Color3(1, 1, 0); // Change to yellow
 
         // Create a box (cube)
         const box = BABYLON.MeshBuilder.CreateBox("box", { size: 2 }, scene);
-        box.material = redMaterial;
+        box.material = yellowMaterial;
 
         // Add a glow layer
         const glowLayer = new BABYLON.GlowLayer("glow", scene);
