@@ -9,6 +9,6 @@ export function createBox(scene) {
     glowLayer.intensity = 0.5;
 
     scene.registerBeforeRender(() => {
-        box.rotation.y += 0.1;
+        box.rotation.y += 0.01;
     });
 }
